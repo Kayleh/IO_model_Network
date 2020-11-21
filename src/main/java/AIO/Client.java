@@ -10,23 +10,30 @@ import java.nio.channels.AsynchronousSocketChannel;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
-public class Client {
+public class Client
+{
 
     private final String LOCALHOST = "localhost";
     private final int DEFAULT_PORT = 8888;
 
+    //客户端的异步管
     AsynchronousSocketChannel clientChannel;
 
-    private void close(Closeable closeable){
-        try {
+    private void close(Closeable closeable)
+    {
+        try
+        {
             closeable.close();
-        } catch (IOException e) {
+        } catch (IOException e)
+        {
             e.printStackTrace();
         }
     }
 
-    public void start(){
-        try {
+    public void start()
+    {
+        try
+        {
             clientChannel = AsynchronousSocketChannel.open();
 
             Future<Void> connect = clientChannel.connect(new InetSocketAddress(LOCALHOST, DEFAULT_PORT));
@@ -35,13 +42,16 @@ public class Client {
             //读取用户的输入
             BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-            while (true){
+            while (true)
+            {
                 String input = in.readLine();
+                //将字符串变成字节数组，将字节数组写入缓冲区
                 byte[] inputBytes = input.getBytes();
                 ByteBuffer buffer = ByteBuffer.wrap(inputBytes);
 
                 //向服务器发送消息
                 Future<Integer> write = clientChannel.write(buffer);
+                // get 阻塞式调用
                 write.get();
 
                 //接收服务器传来的消息
@@ -56,18 +66,23 @@ public class Client {
             }
 
 
-        } catch (IOException e) {
+        } catch (IOException e)
+        {
             e.printStackTrace();
-        } catch (InterruptedException e) {
+        } catch (InterruptedException e)
+        {
             e.printStackTrace();
-        } catch (ExecutionException e) {
+        } catch (ExecutionException e)
+        {
             e.printStackTrace();
-        }finally {
+        } finally
+        {
             close(clientChannel);
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Client client = new Client();
         client.start();
     }
