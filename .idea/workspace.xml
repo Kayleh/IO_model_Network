@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d345220-b301-4038-af9e-61b658551cc8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/AIO/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AIO/Client.java" afterDir="false" />
-    </list>
+    <list default="true" id="5d345220-b301-4038-af9e-61b658551cc8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607068085505</updated>
-      <workItem from="1607068088485" duration="1680000" />
+      <workItem from="1607068088485" duration="2860000" />
     </task>
     <servers />
   </component>
