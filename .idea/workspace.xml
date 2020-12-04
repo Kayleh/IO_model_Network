@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d345220-b301-4038-af9e-61b658551cc8" name="Default Changelist" comment="" />
+    <list default="true" id="5d345220-b301-4038-af9e-61b658551cc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AIO/AIO_Chat/ChatClient.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607068085505</updated>
-      <workItem from="1607068088485" duration="2860000" />
+      <workItem from="1607068088485" duration="14872000" />
     </task>
     <servers />
   </component>
@@ -78,6 +87,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="717" y="180" key="#com.intellij.ide.util.MemberChooser" timestamp="1607093606380">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="717" y="180" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1607093606380" />
     <state x="320" y="9" key="SettingsEditor" timestamp="1607068212319">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
